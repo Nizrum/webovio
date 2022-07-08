@@ -183,6 +183,15 @@ body {
   stroke: #D4D6D4;
 }
 
+.link_gray:hover {
+  color: #FFD723;
+}
+
+.link_gray:hover path {
+  fill: #FFD723;
+  stroke: #FFD723;
+}
+
 .about {
   position: relative;
 }
@@ -284,4 +293,69 @@ body {
 
 .message__person-rank {
   line-height: 1.5rem;
+}
+
+.evaluation {
+  position: relative;
+}
+
+.evaluation__wrapper {
+  padding: 150px 0 320px;
+}
+
+.evaluation__title {
+  width: 607px;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+  color: #4D533C;
+  margin-bottom: 60px;
+}
+
+.evaluation__steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.evaluation-step {
+  width: 255px;
+  padding: 27px 30px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.evaluation-step__title {
+  min-height: 4.25rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  text-transform: uppercase;
+  color: #4D533C;
+  margin-bottom: 1.25rem;
+}
+
+.evaluation-step__text {
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  color: rgba(33, 56, 66, 0.6);
+  margin-bottom: 1.875rem;
+  flex-grow: 1;
+}
+
+.offer {
+  position: absolute;
+  left: 0;
+  bottom: -190px;
+  width: calc(100% - (100% - 1110px) / 2);
+  padding: 70px 164px;
+  background-color: #fafafa;
+  box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+}
+
+.offer__text {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.625rem;
+  color: #4D533C;
+  margin-bottom: 3.125rem;
 }

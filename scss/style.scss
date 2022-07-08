@@ -96,6 +96,15 @@ body {
             fill: $gray-300;
             stroke: $gray-300;
         }
+
+        &:hover {
+            color: $yellow;
+
+            path {
+                fill: $yellow;
+                stroke: $yellow;
+            }
+        }
     }
 }
 
@@ -199,5 +208,70 @@ body {
 
     &__person-rank {
         line-height: 1.5rem;
+    }
+}
+
+.evaluation {
+    position: relative;
+
+    &__wrapper {
+        padding: 150px 0 320px;
+    }
+
+    &__title {
+        width: 607px;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.875rem;
+        color: $gray-900;
+        margin-bottom: 60px;
+    }
+
+    &__steps {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.evaluation-step {
+    width: 255px;
+    padding: 27px 30px 36px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        min-height: 4.25rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        text-transform: uppercase;
+        color: $gray-900;
+        margin-bottom: 1.25rem;
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        color: $gray-500;
+        margin-bottom: 1.875rem;
+        flex-grow: 1;
+    }
+}
+
+.offer {
+    position: absolute;
+    left: 0;
+    bottom: -190px;
+    width: calc(100% - (100% - 1110px) / 2);
+    padding: 70px 164px;
+    background-color: #fafafa;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+
+    &__text {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 4.625rem;
+        color: $gray-900;
+        margin-bottom: 3.125rem;
     }
 }
