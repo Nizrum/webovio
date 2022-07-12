@@ -262,7 +262,7 @@ body {
   width: 475px;
   padding: 244px 40px 60px;
   background-color: #fff;
-  box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+  box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.146);
 }
 
 .message__text {
@@ -295,12 +295,133 @@ body {
   line-height: 1.5rem;
 }
 
+.message_small {
+  width: 450px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.146);
+}
+
+.message_small .message__text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.message_small .message__avatar {
+  margin-right: 14px;
+}
+
+.message_small .message__name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.message_small .message__rank {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.projects__wrapper {
+  padding: 150px 0 190px;
+}
+
+.projects__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.projects__title {
+  width: 331px;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  color: #4D533C;
+}
+
+.projects__text {
+  width: 520px;
+  margin-left: 127px;
+  color: rgba(33, 56, 66, 0.6);
+}
+
+.projects__project {
+  margin-bottom: 165px;
+}
+
+.projects__project:last-child {
+  margin-bottom: 0;
+}
+
+.project {
+  position: relative;
+  padding: 100px 0;
+  background-image: url(../images/project3-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 735px;
+  background-position: 0 0;
+}
+
+.project:nth-child(2) {
+  background-image: url(../images/project1-bg.jpg);
+}
+
+.project:nth-child(3) {
+  background-image: url(../images/project2-bg.jpg);
+  background-position: 100% 0;
+}
+
+.project:nth-child(3) .project__wrapper {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.project:nth-child(3) .project__message {
+  right: 322px;
+  left: auto;
+  bottom: 0;
+}
+
+.project__wrapper {
+  width: 420px;
+  margin-left: auto;
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+  color: #4D533C;
+}
+
+.project__text {
+  color: rgba(33, 56, 66, 0.6);
+  margin-bottom: 5.625rem;
+}
+
+.project__paragraph {
+  margin-bottom: 1.625rem;
+}
+
+.project__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.project__message {
+  position: absolute;
+  bottom: -25px;
+  left: 322px;
+}
+
 .evaluation {
   position: relative;
 }
 
 .evaluation__wrapper {
   padding: 150px 0 320px;
+  border-top: 1px solid rgba(33, 56, 66, 0.1);
 }
 
 .evaluation__title {
