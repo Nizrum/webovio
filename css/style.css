@@ -131,6 +131,14 @@ body {
   height: 40px;
 }
 
+.logo__small {
+  height: 32px;
+}
+
+.logo__small img {
+  height: 32px;
+}
+
 .hero {
   height: 100vh;
   min-height: 800px;
@@ -479,4 +487,39 @@ body {
   line-height: 4.625rem;
   color: #4D533C;
   margin-bottom: 3.125rem;
+}
+
+.footer {
+  padding-top: 310px;
+  background-image: url(../images/footer-bg.jpg);
+  background-color: #4F553D;
+  color: #B6C197;
+}
+
+.footer__top {
+  margin-bottom: 52px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 2.5rem;
+}
+
+.footer__address-item {
+  margin-right: 128px;
+}
+
+.footer__address-item a {
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__address-item:last-child {
+  margin-right: 0;
+}
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 30px;
+  border-top: 1px solid #5D6544;
 }

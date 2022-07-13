@@ -45,6 +45,14 @@ body {
     &__image {
         height: 40px;
     }
+
+    &__small {
+        height: 32px;
+
+        img {
+            height: 32px;
+        }
+    } 
 }
 
 .hero {
@@ -397,5 +405,39 @@ body {
         line-height: 4.625rem;
         color: $gray-900;
         margin-bottom: 3.125rem;
+    }
+}
+
+.footer {
+    padding-top: 310px;
+    background-image: url(../images/footer-bg.jpg);
+    background-color: #4F553D;
+    color: $green-100;
+
+    &__top {
+        margin-bottom: 52px;
+        display: flex;
+        align-items: flex-start;
+        line-height: 2.5rem;
+    }
+
+    &__address-item {
+        margin-right: 128px;
+        a {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 0 30px;
+        border-top: 1px solid #5D6544;
     }
 }
