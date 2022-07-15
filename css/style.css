@@ -367,8 +367,8 @@ body {
   padding: 100px 0;
   background-image: url(../images/project3-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 735px;
-  background-position: 0 0;
+  background-size: 51%;
+  background-position: left center;
 }
 
 .project:nth-child(2) {
@@ -377,7 +377,7 @@ body {
 
 .project:nth-child(3) {
   background-image: url(../images/project2-bg.jpg);
-  background-position: 100% 0;
+  background-position: right center;
 }
 
 .project:nth-child(3) .project__wrapper {
@@ -512,6 +512,10 @@ body {
   color: #fff;
 }
 
+.footer__address-item a:hover {
+  text-decoration: underline;
+}
+
 .footer__address-item:last-child {
   margin-right: 0;
 }
@@ -525,15 +529,22 @@ body {
 }
 
 .footer__links {
+  position: relative;
   display: flex;
+}
+
+.footer__links:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 80%;
+  background-color: #5D6544;
 }
 
 .footer__links-list {
   margin-right: 85px;
-}
-
-.footer__links-list:last-child {
-  margin-right: 0;
 }
 
 .footer__contacts-title {
@@ -555,6 +566,10 @@ body {
   line-height: 2.375rem;
   color: #fff;
   margin-bottom: 1.5rem;
+}
+
+.footer__email:hover {
+  text-decoration: underline;
 }
 
 .footer__socials {
@@ -604,4 +619,97 @@ body {
 .links-list__link {
   line-height: 2.5rem;
   color: #B6C197;
+}
+
+.links-list__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .brands {
+    width: calc(100% - (100% - 900px) / 2);
+  }
+  .brands__brand {
+    margin-right: 50px;
+  }
+  .brands__image {
+    height: 80px;
+  }
+  .about__title {
+    font-size: 2rem;
+  }
+  .message {
+    width: 350px;
+    padding: 200px 32px 48px;
+  }
+  .message__text {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .message__avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .message__name {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .message_small {
+    padding: 30px;
+  }
+  .message_small .message__avatar {
+    width: 46px;
+    height: 46px;
+  }
+  .projects__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .project {
+    padding: 0;
+    background-size: 45%;
+  }
+  .project__title {
+    font-size: 2rem;
+    line-height: 2.875rem;
+  }
+  .project:nth-child(3) .project__message {
+    bottom: -20%;
+    right: 17%;
+  }
+  .project__message {
+    bottom: -20%;
+    left: 17%;
+  }
+  .evaluation__wrapper {
+    padding: 150px 0px 250px;
+  }
+  .evaluation__title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .evaluation-step {
+    padding: 25px;
+    width: 24%;
+  }
+  .evaluation-step__title {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .offer {
+    padding: 60px 150px;
+    width: calc(100% - (100% - 900px) / 2);
+  }
+  .offer__text {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer__links-list {
+    margin-right: 65px;
+  }
 }

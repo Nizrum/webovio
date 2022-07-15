@@ -286,8 +286,8 @@ body {
     padding: 100px 0;
     background-image: url(../images/project3-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 735px;
-    background-position: 0 0;
+    background-size: 51%;
+    background-position: left center;
 
     &:nth-child(2) {
         background-image: url(../images/project1-bg.jpg);
@@ -295,7 +295,7 @@ body {
 
     &:nth-child(3) {
         background-image: url(../images/project2-bg.jpg);
-        background-position: 100% 0;
+        background-position: right center;
 
         .project__wrapper {
             margin-right: auto;
@@ -423,9 +423,14 @@ body {
 
     &__address-item {
         margin-right: 128px;
+
         a {
             font-weight: 700;
             color: #fff;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         &:last-child {
@@ -442,15 +447,22 @@ body {
     }
 
     &__links {
+        position: relative;
         display: flex;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            height: 80%;
+            background-color: #5D6544;
+        }
     }
 
     &__links-list {
         margin-right: 85px;
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
     &__contacts-title {
@@ -472,6 +484,10 @@ body {
         line-height: 2.375rem;
         color: #fff;
         margin-bottom: 1.5rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__socials {
@@ -524,5 +540,136 @@ body {
     &__link {
         line-height: 2.5rem;
         color: $green-100;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: 900px;
+    }
+
+    .brands {
+        width: calc(100% - (100% - 900px) / 2);
+
+        &__brand {
+            margin-right: 50px;
+        }
+
+        &__image {
+            height: 80px;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 2rem;
+        }
+    }
+
+    .message {
+        width: 350px;
+        padding: 200px 32px 48px;
+        
+        &__text {
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &__avatar {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__name {
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+
+        &_small {
+            padding: 30px;
+
+            .message__avatar {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+    .projects {
+
+        &__title {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    .project {
+        padding: 0;
+        background-size: 45%;
+
+        &__title {
+            font-size: 2rem;
+            line-height: 2.875rem;
+        }
+
+        &:nth-child(3) {
+
+            .project__message {
+                bottom: -20%;
+                right: 17%;
+            }
+        }
+
+        &__message {
+            bottom: -20%;
+            left: 17%;
+        }
+    }
+
+    .evaluation {
+
+        &__wrapper {
+            padding: 150px 0px 250px;
+        }
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+    }
+
+    .evaluation-step {
+        padding: 25px;
+        width: 24%;
+
+        &__title {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+    }
+
+    .offer {
+        padding: 60px 150px;
+        width: calc(100% - (100% - 900px) / 2);
+
+        &__text {
+            font-size: 3rem;
+            line-height: 4rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .footer {
+
+        &__links-list {
+            margin-right: 65px;
+        }
     }
 }
