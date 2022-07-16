@@ -673,3 +673,113 @@ body {
         }
     }
 }
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .hero {
+
+        &__title {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+    }
+
+    .about {
+
+        &__wrapper {
+            padding-bottom: 60px;
+            padding-top: 120px;
+        }
+    }
+
+    .message {
+        display: none;
+    }
+
+    .brands {
+        width: calc(100% - (100% - 700px) / 2);
+        padding: 50px;
+    }
+
+    .projects {
+
+        &__wrapper {
+            padding: 60px 0px 120px;
+        }
+
+        &__title {
+            flex-shrink: 0;
+            width: 300px;
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+        }
+
+        &__text {
+            width: auto;
+            margin-left: 50px;
+        }
+    }
+
+    .project {
+        background-position: left top;
+        margin-bottom: 120px;
+
+        &__wrapper {
+            width: 50%;
+        }
+
+        &:nth-child(3) {
+            background-position: right top;
+        }
+    }
+
+    .evaluation {
+
+        &__wrapper {
+            padding: 120px 0px 200px;
+        }
+
+        &__steps {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+    }
+
+    .evaluation-step {
+        width: 47%;
+
+        &__title {
+            min-height: 2rem;
+        }
+    }
+
+    .offer {
+        width: calc(100% - (100% - 700px) / 2);
+
+        &__text {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    .footer {
+
+        &__middle {
+            flex-direction: column;
+        }
+
+        &__links {
+            padding-bottom: 60px;
+            margin-bottom: 52px;
+            border-bottom: 1px solid #5D6544;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
