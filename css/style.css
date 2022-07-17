@@ -131,11 +131,11 @@ body {
   height: 40px;
 }
 
-.logo__small {
+.logo_small {
   height: 32px;
 }
 
-.logo__small img {
+.logo_small img {
   height: 32px;
 }
 
@@ -606,6 +606,12 @@ body {
   justify-content: space-between;
   padding: 24px 0 30px;
   border-top: 1px solid #5D6544;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.footer__logo {
+  margin-right: 30px;
 }
 
 .links-list__title {
@@ -723,7 +729,7 @@ body {
     line-height: 4rem;
   }
   .about__wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     padding-top: 120px;
   }
   .message {
@@ -786,5 +792,72 @@ body {
   }
   .footer__links:after {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+  .hero__wrapper {
+    width: 100%;
+  }
+  .hero__title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  .brands {
+    top: -60px;
+    width: calc(100% - (100% - 500px) / 2);
+    padding: 30px;
+  }
+  .brands__brand {
+    margin-right: 30px;
+  }
+  .brands__image {
+    height: 60px;
+  }
+  .projects__wrapper {
+    padding: 80px 0;
+  }
+  .projects__header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 80px;
+  }
+  .projects__title {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .projects__text {
+    margin-left: 0;
+  }
+  .project__title {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .project__text {
+    margin-bottom: 2rem;
+  }
+  .project__paragraph {
+    margin-bottom: 1rem;
+  }
+  .evaluation__wrapper {
+    padding: 80px 0px 200px;
+  }
+  .evaluation__title {
+    width: auto;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .offer {
+    width: calc(100% - (100% - 500px) / 2);
+    padding: 60px;
+  }
+  .footer__links {
+    justify-content: space-between;
+  }
+  .footer__links-list {
+    margin-right: 0;
   }
 }
