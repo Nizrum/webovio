@@ -889,3 +889,64 @@ body {
         }
     }
 }
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .brands {
+        top: -35px;
+        padding: 15px;
+        width: calc(95%);
+        justify-content: space-between;
+
+        &__brand {
+            margin-right: 0;
+        }
+
+        &__image {
+            height: 45px;
+        }
+    }
+
+    .about {
+
+        &__info {
+            flex: 0 0 100%;
+        }
+    }
+
+    .project {
+        background-size: 100%;
+
+        &__wrapper {
+            width: 100%;
+            margin: 0;
+            padding-top: 92%;
+        }
+    }
+
+    .offer {
+        padding: 45px;
+        width: 95%;
+
+        &__text {
+            font-size: 2rem;
+            line-height: 2.875rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .footer {
+
+        &__top {
+            justify-content: space-between;
+        }
+
+        &__address-item {
+            margin-right: 0;
+        }
+    }
+}
