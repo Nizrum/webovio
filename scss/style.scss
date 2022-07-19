@@ -950,3 +950,86 @@ body {
         }
     }
 }
+
+@media (max-width: 480px) {
+
+    .hero {
+
+        &__title {
+            font-size: 2rem;
+            line-height: 2.875rem;
+        }
+    }
+
+    .about {
+
+        &__title {
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+        }
+    }
+
+    .evaluation-step {
+        width: 100%;
+    }
+
+    .offer {
+        padding: 30px;
+        bottom: -90px;
+        
+        &__text {
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+        }
+    }
+
+    .footer {
+        padding-top: 180px;
+
+        &__top {
+            flex-direction: column;
+        }
+
+        &__address-item {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__links {
+            flex-wrap: wrap;
+        }
+
+        &__links-list {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__email {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        &__copy {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+    }
+
+    .links-list {
+        width: 100%;
+
+        &__title {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

@@ -905,3 +905,63 @@ body {
     margin-right: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2rem;
+    line-height: 2.875rem;
+  }
+  .about__title {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .evaluation-step {
+    width: 100%;
+  }
+  .offer {
+    padding: 30px;
+    bottom: -90px;
+  }
+  .offer__text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .footer {
+    padding-top: 180px;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__address-item {
+    margin-bottom: 30px;
+  }
+  .footer__address-item:last-child {
+    margin-bottom: 0;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+  }
+  .footer__links-list {
+    margin-bottom: 40px;
+  }
+  .footer__links-list:last-child {
+    margin-bottom: 0;
+  }
+  .footer__email {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .footer__copy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .links-list {
+    width: 100%;
+  }
+  .links-list__title {
+    margin-bottom: 0.5rem;
+  }
+}
