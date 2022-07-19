@@ -907,6 +907,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 500px;
+  }
   .hero__title {
     font-size: 2rem;
     line-height: 2.875rem;
@@ -963,5 +966,32 @@ body {
   }
   .links-list__title {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__burger-button {
+    flex-shrink: 0;
+  }
+  .logo {
+    height: 32px;
+  }
+  .logo__image {
+    height: 32px;
+  }
+  .hero__title {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .brands {
+    top: -28px;
+    padding: 12px;
+  }
+  .brands__brand {
+    width: 18%;
+  }
+  .brands__image {
+    height: auto;
+    width: 100%;
   }
 }
